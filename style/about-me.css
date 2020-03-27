@@ -1,0 +1,27 @@
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+.content-container .mybio {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	width: 70%;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 38px;
+}
+
+.content-container .mybio ul {
+	margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+	.content-container {
+		height: 87vh;
+	}
+}

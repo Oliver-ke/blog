@@ -97,4 +97,11 @@ article .content .code {
 	h3.title {
 		font-size: 1.5rem;
 	}
+	.author-card p {
+		font-size: 10px;
+	}
+	.author-card {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
 }

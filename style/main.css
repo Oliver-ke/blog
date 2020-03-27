@@ -4,6 +4,8 @@
 @import './sidebar.css';
 @import './footer.css';
 @import './post.css';
+@import './subscribe.css';
+@import './about-me.css';
 
 * {
 	box-sizing: border-box;
