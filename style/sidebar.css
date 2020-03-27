@@ -1,0 +1,103 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	transition: all 0.3s linear;
+	background: #f4f4f4;
+	box-shadow: 0px 3px 50px #0000001F;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+img.avatar {
+	vertical-align: middle;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.avater-container {
+	border: 2px solid #182a57;
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+
+.profile {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-size: 12px;
+	margin-top: 5rem;
+}
+
+.sidebar_menu ul li {
+	list-style: none;
+}
+.sidebar_menu ul li a {
+	font-size: 18px;
+	padding: 15px 35px;
+	display: block;
+	white-space: nowrap;
+	letter-spacing: 1.5px;
+	color: #182a57;
+	opacity: 1;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+.sidebar ul li a span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.sidebar_menu ul li a span img {
+	width: 25px;
+	height: 25px;
+}
+
+.sidebar .sidebar_menu {
+	position: relative;
+	padding-top: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+	min-height: 100%;
+}
+
+.sidebar_menu ul li a:hover {
+	opacity: 0.8;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.social-links a img {
+	width: 20px;
+	height: 20px;
+	margin: 1rem;
+}
+
+/* this styles are applied when the sidebar open/close button is clicked */
+
+.wrapper.open .sidebar {
+	width: 0;
+}
+
+.wrapper.open .sidebar .profile,
+.wrapper.open .sidebar .sidebar_menu {
+	display: none;
+}
+
+/* media query for sidbar at small screen */
+@media (max-width: 768px) {
+	.sidebar {
+		width: 250px;
+	}
+}

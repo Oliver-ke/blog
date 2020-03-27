@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import './card.css';
+@import './button.css';
+@import './sidebar.css';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	display: block;
+	color: #fff;
+	background-color: #182a57;
+	width: calc(100% - 300px);
+	height: 56px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	line-height: 56px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+		0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all 0.3s linear;
+	z-index: 2;
+}
+
+.header .menu-btn {
+	height: 100%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.header .menu-btn > img {
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+}
+
+.wrapper.open .main-content {
+	margin-left: 0;
+}
+
+.wrapper.open .header {
+	width: 100%;
+}
+
+.main-content {
+	margin-top: 6rem;
+	margin-left: 300px;
+	padding: 20px;
+	transition: all 0.3s linear;
+}
+
+.main-content h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	border-left: 3px solid #182a57;
+	padding-left: 10px;
+}
+
+.blog-posts {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 10px;
+	margin-bottom: 2rem;
+}
+
+/* Media query for responsive display */
+@media (max-width: 768px) {
+	.blog-posts {
+		grid-template-columns: repeat(1, 1fr);
+		margin-top: 5rem;
+		padding: 10px;
+	}
+	.main-content {
+		margin-left: 250px;
+	}
+	.header {
+		width: calc(100% - 250px);
+	}
+}
