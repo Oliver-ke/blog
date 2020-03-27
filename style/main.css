@@ -70,7 +70,7 @@ a {
 
 .main-content h2 {
 	font-size: 1.5rem;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	border-left: 3px solid #182a57;
 	padding-left: 10px;
 }
@@ -84,15 +84,27 @@ a {
 
 /* Media query for responsive display */
 @media (max-width: 768px) {
-	.blog-posts {
-		grid-template-columns: repeat(1, 1fr);
-		margin-top: 5rem;
-		padding: 10px;
-	}
 	.main-content {
 		margin-left: 250px;
 	}
 	.header {
 		width: calc(100% - 250px);
+	}
+	.main-content h2 {
+		margin-bottom: 0.5rem;
+	}
+	.blog-posts {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 848px) {
+	.blog-posts {
+		grid-template-columns: repeat(1, 1fr);
+		margin-top: 0;
+		padding: 10px;
+	}
+	.main-content {
+		padding: 0;
 	}
 }

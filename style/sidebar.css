@@ -85,11 +85,9 @@ img.avatar {
 }
 
 /* this styles are applied when the sidebar open/close button is clicked */
-
 .wrapper.open .sidebar {
 	width: 0;
 }
-
 .wrapper.open .sidebar .profile,
 .wrapper.open .sidebar .sidebar_menu {
 	display: none;
