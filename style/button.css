@@ -21,16 +21,21 @@
 	font-weight: bold;
 }
 
-.btn.social-twitter {
+.btn.social {
 	padding: 10px 15px;
 	font-weight: bold;
+}
+
+.twitter {
 	background-color: #1ca0f0;
 }
 
-.btn.social-facebook {
-	padding: 10px 15px;
-	font-weight: bold;
+.facebook {
 	background-color: #0676e8;
+}
+
+.linkedin {
+	background: #0077B5;
 }
 
 .btn:hover {

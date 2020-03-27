@@ -20,8 +20,18 @@
 	margin-left: 3rem;
 }
 
+.content-container .mybio em {
+	font-weight: bold;
+}
+
 @media (max-width: 768px) {
 	.content-container {
 		height: 87vh;
+	}
+	.content-container .mybio {
+		padding: 10px;
+		width: 80%;
+		font-size: 15px;
+		line-height: 30px;
 	}
 }
