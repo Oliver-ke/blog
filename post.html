@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog">
+  <meta name="keywords" content="Oliver, blog, Node, Javascript, webdesign">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style/main.css" rel="stylesheet">
+  <title>Oliver's Blog/Portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="menu-btn">
+        <img src="./assets/icons/menu.svg" alt="menubtn">
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="profile">
+        <div class="avater-container">
+            <img class="avatar" src="./assets/images/avater.jpg" alt="avatar">
+        </div>
+        <h6>Passionate Tech lover</h6>
+        <p>Azorji Kelechi Oliver</p>
+      </div>
+      <div class="sidebar_menu">
+          <ul>
+            <li>
+              <a href="./index.html" class="active">
+                <span class="icon"><img alt="blog icon" src="./assets/icons//blog.svg"/></span>
+                <span class="list">Blog Posts</span>
+              </a>
+            </li>
+            <li>
+              <a href="./about-me.html">
+                <span class="icon"><img alt="avater icon" src="./assets/icons//user.svg"/></span>
+                <span class="list">About Me</span>
+              </a>
+            </li>
+            <li>
+              <a href="./subscribe.html">
+                <span class="icon"><img alt="subscribe icon" src="./assets/icons//rss.svg"/></span>
+                <span class="list">Subscribe Here</span>
+              </a>
+            </li>
+          </ul>
+          <div class="social-links">
+              <a href="https://www.linkedin.com/in/oliver-ke" class="link">
+                <span class="icon"><img alt="linkedin icon" src="./assets/icons/linkedin.svg"/></span>
+              </a>
+              <a href="https://twitter.com/KelechiOliver3" class="link">
+                <span class="icon"><img alt="twitter icon" src="./assets/icons/twitter.svg"/></span>
+              </a>
+              <a href="https://github.com/oliver-ke" class="link">
+                <span class="icon"><img alt="github icon" src="./assets/icons/github.svg"/></span>
+              </a>
+          </div>
+      </div>
+    </nav>
+    <section class="main-content">
+       <a  href="./index.html" class="btn primary">< Back</a>
+       <div class="badges">
+         <span class="badge">Javascript</span>
+         <span class="badge">Internet</span>
+         <span class="badge">Web</span>
+       </div>
+       <h3 class="title">
+        Introduction to Markdown
+       </h3>
+       <div class="author-card">
+        <img src="./assets/images/avater.jpg" alt="author image">
+         <div class="author-info">
+           <h5>Kelechi Oliver</h5>
+           <p>Programmer and IoT enthusiast</p>
+           <p>Co-organizers at Devc Ph</p>
+           <p>
+             young and passionate, lover of codes
+           </p>
+         </div>
+       </div>
+       <article>
+         <img src="./assets/images/markdown.jpg" alt="article cover" class="artcle">
+         <div class="content">
+            <p>
+              If your a self taught developer like me, you must 
+              have unknowingly used markdown before especially in 
+              GitHub README.md file, which is a markdown file, 
+              well at least I knew that from the file extension. 
+              Markdown files are used to make blog post, in static 
+              site generator like Gatsby and commonly on github’s 
+              README file. As a programmer, knowing how to write markdown 
+              files can be very handy for documentation,
+              blog post, README files and more. To get a feel of how a 
+              markdown looks in its row and preview form check the gist here on 
+              <span><a href="https://gist.github.com/Oliver-ke/932c9c5ab29ecf2b5ded3e53455e9725">github</a></span>
+            </p>
+            <div class="highlight text">
+              <q>
+                Markdown is a lightweight markup language with plain text formatting syntax. 
+                Its design allows it to be converted to many output formats, but the original 
+                tool by the same name only supports HTML
+              </q>
+            </div>
+            <p>
+              So.. lets dive into how to write your own markdown files, 
+              don’t be scared it not hard trust me ):
+            </p>
+            <p>
+              In this article we will cover the following
+              <ul class="text">
+                <li>Different types of headings in markdown — h1, h2,h3,h4,h5,h6</li>
+                <li>Making text italic and bold</li>
+                <li>Block quote</li>
+                <li>Links</li>
+                <li>List</li>
+                <li>Inline code block</li>
+                <li>And few GitHub specific markdown</li>
+              </ul>
+            </p>
+            <p>
+              <em>Note:</em> A markdown file has an md extension, 
+              so to write a markdown file open up your 
+              favorite text editor (in my case I use vs code) 
+              and create a new file with .md extension, 
+              example: projectReadme.md
+            </p>
+            <p>
+              i) Headings — Markdown heading are written by adding an hash sign (#) 
+              at the beginning of the text depending on the type of heading, 
+              for h1 one # is used before the text, for h2 ## are
+              used before the text and so on
+            </p>
+            <div class="code">
+              <code>
+                # Heading 1 <br>
+                ## Heading 2 <br>
+                ### Heading 3 <br>
+                #### Heading 4 <br>
+                ##### Heading 5 <br>
+                ###### Heading 6 <br>
+              </code>
+            </div>
+            <p>
+              ii)(b) Making text bold— To make a text bold, 
+              you append a double asterisks or a double 
+              underscore from the starting of the text to the end.
+             </p>
+             <div class="code">
+               <code>
+                **This text** is Bold
+                or <br>
+                __This text__ is Bold
+               </code>
+         </div>
+         </div>
+       </article>
+       <div class="social-share">
+        <h5>Share this Article on</h5>
+        <a class="btn social-twitter">Twitter</a>
+        <a class="btn social-facebook">Facebook</a>
+       </div>
+    </section>
+    <footer class="app-footer">
+        <p>@2020 Smart Articles</p>
+        <p>Email: kelechioliver96@gmail.com</p>
+        <h3>Built With 💖 from Udacity Frontend Course</h3>
+    </footer>
+  </div>
+  <script src="./script/index.js"></script>
+</body>
+</html>

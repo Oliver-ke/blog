@@ -1,0 +1,100 @@
+.badges {
+	display: flex;
+	justify-content: flex-end;
+}
+
+span.badge {
+	font-size: .8rem;
+	border-radius: 2px;
+	background-color: #eceff1;
+	min-width: 3rem;
+	padding: 0 6px;
+	margin-left: 14px;
+	text-align: center;
+	line-height: 22px;
+	height: 22px;
+	float: right;
+}
+
+h3.title {
+	font-weight: 100;
+	font-size: 2.5rem;
+	margin: 1rem 1rem;
+}
+
+.author-card {
+	background-color: #fafafa;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+		0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+	padding: 24px;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	gap: 10px;
+}
+
+.author-card img {
+	max-width: 100px;
+	height: auto;
+	border-radius: 50%;
+}
+
+article {
+	padding-top: 1rem;
+}
+
+article img {
+	width: 100%;
+	height: auto;
+}
+article .content {
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+article .content p,
+article .content .text {
+	font-size: 21.1px;
+	text-align: start;
+	line-height: 33.18px;
+	padding-bottom: 10px;
+}
+
+article .content .highlight {
+	border-left: 3px solid #000;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+article .content ul {
+	margin-left: 30px;
+}
+article .content .code {
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	border-left: 3px solid #4a148c;
+	color: #666;
+	page-break-inside: avoid;
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1em 1.5em;
+	display: block;
+	word-wrap: break-word;
+}
+
+.social-share {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+	h3.title {
+		font-size: 1.5rem;
+	}
+}

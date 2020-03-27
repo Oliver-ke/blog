@@ -3,6 +3,7 @@
 @import './button.css';
 @import './sidebar.css';
 @import './footer.css';
+@import './post.css';
 
 * {
 	box-sizing: border-box;
