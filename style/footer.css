@@ -1,0 +1,26 @@
+.app-footer {
+	margin-left: 300px;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	background: #ccc;
+	box-shadow: 0px 3px 50px #0000001F;
+	transition: all 0.3s linear;
+}
+
+.wrapper.open .app-footer {
+	margin-left: 0;
+}
+
+@media (max-width: 768px) {
+	.app-footer {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.app-footer h3 {
+		font-size: 10px;
+	}
+	.app-footer p {
+		font-size: 15px;
+	}
+}
