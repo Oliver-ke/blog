@@ -1,3 +1,4 @@
+/* containing element */
 .content-container {
 	display: flex;
 	flex-direction: column;
@@ -24,6 +25,7 @@
 	font-weight: bold;
 }
 
+/* Media query for responsiveness */
 @media (max-width: 768px) {
 	.content-container {
 		height: 87vh;

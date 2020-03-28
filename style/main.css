@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
-@import './card.css';
-@import './button.css';
-@import './sidebar.css';
-@import './footer.css';
-@import './post.css';
-@import './subscribe.css';
-@import './about-me.css';
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap);
 
+/* Css file imports */
+@import url(./card.css);
+@import url(./button.css);
+@import url(./sidebar.css);
+@import url(./footer.css);
+@import url(./post.css);
+@import url(./subscribe.css);
+@import url(./about-me.css);
+
+/* removes pages margin and padding  */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -22,15 +25,12 @@ body {
 	flex-direction: column;
 }
 
-html,
-body {
-	height: 100%;
-}
-
+/* Remove all decoration on anchor tag */
 a {
 	text-decoration: none;
 }
 
+/* Page Header */
 .header {
 	display: block;
 	color: #fff;
@@ -64,14 +64,11 @@ a {
 	vertical-align: middle;
 }
 
-.wrapper.open .main-content {
-	margin-left: 0;
-}
-
 .wrapper.open .header {
 	width: 100%;
 }
 
+/* Main content */
 .main-content {
 	margin-top: 6rem;
 	margin-left: 300px;
@@ -86,6 +83,11 @@ a {
 	padding-left: 10px;
 }
 
+.wrapper.open .main-content {
+	margin-left: 0;
+}
+
+/* Blog post, ie cards container */
 .blog-posts {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
@@ -109,6 +111,7 @@ a {
 	}
 }
 
+/* Table size */
 @media (max-width: 848px) {
 	.blog-posts {
 		grid-template-columns: repeat(1, 1fr);

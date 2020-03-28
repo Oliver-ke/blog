@@ -1,3 +1,4 @@
+/* Posts card styles */
 .card {
 	transition: box-shadow .25s;
 	margin: .5rem 0 1rem;
@@ -47,6 +48,7 @@
 	padding: 1rem;
 }
 
+/* Responsiveness */
 @media (max-width: 768px) {
 	.card .content {
 		padding: 0.5rem;

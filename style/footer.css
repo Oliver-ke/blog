@@ -1,3 +1,4 @@
+/* page footer */
 .app-footer {
 	margin-left: 300px;
 	display: flex;
@@ -8,6 +9,7 @@
 	transition: all 0.3s linear;
 }
 
+/* remove margin-left when no sidebar */
 .wrapper.open .app-footer {
 	margin-left: 0;
 }

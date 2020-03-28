@@ -1,8 +1,10 @@
+/* post badges container */
 .badges {
 	display: flex;
 	justify-content: flex-end;
 }
 
+/* badge */
 span.badge {
 	font-size: .8rem;
 	border-radius: 2px;
@@ -16,12 +18,14 @@ span.badge {
 	float: right;
 }
 
+/* Post title text */
 h3.title {
 	font-weight: 100;
 	font-size: 2.5rem;
 	margin: 1rem 1rem;
 }
 
+/* Author card */
 .author-card {
 	background-color: #fafafa;
 	border-radius: 2px;
@@ -39,6 +43,7 @@ h3.title {
 	border-radius: 50%;
 }
 
+/* article */
 article {
 	padding-top: 1rem;
 }
@@ -61,7 +66,7 @@ article .content .text {
 	padding-bottom: 10px;
 }
 
-article .content .highlight {
+.content .highlight {
 	border-left: 3px solid #000;
 	padding-left: 10px;
 	font-style: italic;
@@ -87,6 +92,7 @@ article .content .code {
 	word-wrap: break-word;
 }
 
+/* social share container */
 .social-share {
 	padding-left: 30px;
 	padding-right: 30px;
