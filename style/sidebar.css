@@ -46,9 +46,7 @@
 
 .sidebar .sidebar_menu {
 	position: relative;
-	padding-top: 60px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 60px 5px 0 5px;
 	min-height: 100%;
 }
 
